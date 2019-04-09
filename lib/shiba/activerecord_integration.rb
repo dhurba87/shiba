@@ -87,7 +87,7 @@ module Shiba
         RSpec.configure do |config|
           config.after(:suite) do
             yield unless @shiba_done
-            @shiba_done = true
+            #@shiba_done = true
           end
         end
         @done_hook = :rspec
